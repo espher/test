@@ -14,8 +14,8 @@ class Book_Model extends CI_Model {
                             books.id, books.author_id, books.gender_id, books.name, books.publication_year, books.description
                         ');    
         $this->db->from($this->means);
-        $this->db->join('genders', 'gender_id = genders.id');
-        $this->db->join('authors', 'author_id = authors.id');
+        $this->db->join('genders', 'books.gender_id = genders.id');
+        $this->db->join('authors', 'books.author_id = authors.id');
         $query = $this->db->get();
         return $query->result();
     }
@@ -37,7 +37,7 @@ class Book_Model extends CI_Model {
     public function create($data) {
         
         $author = $this->db->get_where('authors', array('id' => $data['author_id']));
-        $gender = $this->db->get_where('authors', array('id' => $data['gender_id']));
+        $gender = $this->db->get_where('genders', array('id' => $data['gender_id']));
         
         if( $author->row() && $gender->row() ){
             $this->db->insert($this->means, $data);
@@ -50,7 +50,7 @@ class Book_Model extends CI_Model {
         //$this->db->where('id', $id);
 
         $author = $this->db->get_where('authors', array('id' => $data['author_id']));
-        $gender = $this->db->get_where('authors', array('id' => $data['gender_id']));
+        $gender = $this->db->get_where('genders', array('id' => $data['gender_id']));
 
         if( $author->row() && $gender->row() ){
             $this->db->where('id', $id);
