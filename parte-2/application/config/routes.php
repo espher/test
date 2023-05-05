@@ -52,3 +52,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+$route['api/authors']['get'] = 'author/index';
+$route['api/authors']['post'] = 'author/create';
+$route['api/authors/(:num)']['get'] = 'author/show/$1';
+$route['api/authors/(:num)']['put'] = 'author/update/$1';
+$route['api/authors/(:num)']['delete'] = 'author/delete/$1';
+
+$route['api/books']['get'] = 'book/index';
+$route['api/books']['post'] = 'book/create';
+$route['api/books/(:num)']['get'] = 'book/show/$1';
+$route['api/books/(:num)']['put'] = 'book/update/$1';
+$route['api/books/(:num)']['delete'] = 'book/delete/$1';
+
+$route['api/genders']['get'] = 'gender/index';
+$route['api/genders']['post'] = 'gender/create';
+$route['api/genders/(:num)']['get'] = 'gender/show/$1';
+$route['api/genders/(:num)']['put'] = 'gender/update/$1';
+$route['api/genders/(:num)']['delete'] = 'gender/delete/$1';
