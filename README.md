@@ -18,67 +18,67 @@ Para instalar la aplicacion <br>
 *******************
 ##API - CALLS
 
-AUTHORS
-GET
-get all book
-/api/authors/
+<b>##AUTHORS</b> <br>
+<b>GET</b><br>
+get all book<br>
+/api/authors/<br>
 
-get single book
+get single book<br>
+/api/authors/1<br>
+
+<b>POST</b><br>
+create book<br>
+/api/authors/<br>
+
+<b>PUT</b> <br>
+update a book<br>
+/api/authors/1<br>
+
+<b>DELETE</b> <br>
+delete a book<br>
 /api/authors/1
 
-POST
-create book
-/api/authors/
+<br><br>
+
+<b>##BOOKS</b><br>
+<b>GET</b><br>
+get all book<br>
+/api/books/<br>
+
+get single book<br>
+/api/books/1<br>
+
+<b>POST</b><br>
+create book<br>
+/api/books/<br>
+
+<b>PUT</b> <br>
+update a book<br>
+/api/books/1<br>
+
+<b>DELETE</b> <br>
+delete a book<br>
+/api/books/1<br>
+
+<br><br>
+
+<b>##GENDERS</b><br>
+<b>GET</b><br>
+get all book<br>
+/api/genders/<br>
+
+get single book<br>
+/api/genders/1<br>
+
+<b>POST</b><br>
+create book<br>
+/api/genders/<br>
 
 PUT 
 update a book
-/api/authors/1
-
-DELETE 
-delete a book
-/api/authors/1
-
-
-
-BOOKS
-GET
-get all book
-/api/books/
-
-get single book
-/api/books/1
-
-POST
-create book
-/api/books/
-
-PUT 
-update a book
-/api/books/1
-
-DELETE 
-delete a book
-/api/books/1
-
-
-
-GENDERS
-GET
-get all book
-/api/genders/
-
-get single book
 /api/genders/1
 
-POST
-create book
-/api/genders/
-
-PUT 
-update a book
-/api/genders/1
-
-DELETE 
-delete a book
-/api/genders/1
+<b>DELETE</b> <br>
+delete a book<br>
+/api/genders/1<br>
 *******************
