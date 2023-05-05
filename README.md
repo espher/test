@@ -3,15 +3,24 @@ TEST
 *******************
 
 *******************
-Para instalar la aplicacion <br>
-1 - Debes de tener cualquier ambiente LAMP previamente instalado en tu ordenador <br>
-2 - Clona el repositorio dentro de tu ambiente LAMP <br>
-3 - Modifica el archivo .env conforme a tus datos <br>
-4 - Corre las migraciones  <br>
-	Dentro de un command line, dirigete a la carpeta base del proyecto y corre el siguiente comando <br>
-	<b>php index.php migrate</b><br>
-	el mensaje "Migrated Successfully" indica que todo corrio bien y las tablas fueron creadas correctamente<br>
-5 - Happy testing<br>
+Para instalar la aplicacion 
+
+1 - Debes de tener cualquier ambiente LAMP previamente instalado en tu ordenador 
+
+2 - Clona el repositorio dentro de tu ambiente LAMP 
+
+3 - Modifica el archivo .env conforme a tus datos 
+
+4 - Corre las migraciones  
+
+	Dentro de un command line, dirigete a la carpeta base del proyecto y corre el siguiente comando 
+	
+	<b>php index.php migrate</b>
+	
+	el mensaje "Migrated Successfully" indica que todo corrio bien y las tablas fueron creadas correctamente
+	
+5 - Happy testing
+
 *******************
 
 
