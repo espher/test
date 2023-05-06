@@ -1,8 +1,12 @@
 *******************
 #TEST
 *******************
-
+<br>PARTE 1
+Para verificar la parte 1 del test, solo es necesario  ir a la carpeta "parte-1" y ejecutar el archivo index.html<br>
+<br>
 *******************
+<br>PARTE 2<br>
+
 Para instalar la aplicacion <br>
 1 - Debes de tener cualquier ambiente LAMP previamente instalado en tu ordenador <br>
 2 - Clona el repositorio dentro de tu ambiente LAMP <br>
