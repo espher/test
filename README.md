@@ -1,7 +1,7 @@
 *******************
 #TEST
 *******************
-<br>PARTE 1
+<br>PARTE 1<br>
 Para verificar la parte 1 del test, solo es necesario  ir a la carpeta "parte-1" y ejecutar el archivo index.html<br>
 <br>
 *******************
