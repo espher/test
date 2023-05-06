@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/index.css" rel="stylesheet">
+	<title>Libros</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>Búsqueda de libros</h1>
+	<form id="search-form">
+        <input type="text" id="search" name="search" placeholder="Buscar">
+        <button type="submit">Buscar</button>
+        <button id="clear-search-btn">Borrar búsqueda</button>
+    </form>
+	<br>
+    <button onclick="sortTable(1)">Sort Title</button>
+    <button onclick="sortTable(4)">Sort Relevance</button>
+    <button onclick="sortTable(5)">Sort Language</button>
+	<table id="book-table">
+		<thead>
+			<tr>
+				<th>Portada</th>
+				<th>Título</th>
+				<th>Autor</th>
+				<th>Resumen</th>
+                <th>Relevancia</th>
+                <th>Idioma</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>El nombre del viento</td>
+				<td>Patrick Rothfuss</td>
+                <td>
+                    La crónica del asesino de reyes es una serie de novelas de fantasía escrita por el autor estadounidense Patrick Rothfuss.
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>3</td>
+                <td>Español</td>
+			</tr>
+			<tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>1984</td>
+				<td>George Orwell</td>
+                <td>La novela está ambientada en una sociedad totalitaria y es una sátira política que se centra en el poder del gobierno y su control sobre la vida de los ciudadanos.
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>5</td>
+                <td>Español</td>
+			</tr>
+			<tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>Harry Potter y la piedra filosofal</td>
+				<td>J.K. Rowling</td>
+                <td>La historia sigue a un joven mago llamado Harry Potter y sus amigos Hermione Granger y Ron Weasley mientras estudian en la escuela de magia y hechicería de Hogwarts.
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>4</td>
+                <td>Español</td>
+			</tr>
+            <tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>El señor de los anillos</td>
+				<td>J.R.R. Tolkien</td>
+                <td>La novela sigue las aventuras de un hobbit llamado Frodo Bolsón y sus amigos mientras buscan destruir un anillo mágico que puede controlar el destino del mundo.
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>5</td>
+                <td>Ingles</td>
+			</tr>
+			<tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>La naranja mecánica</td>
+				<td>Anthony Burgess</td>
+                <td>La novela es una sátira social que sigue la historia de un joven delincuente llamado Alex y sus experiencias con el gobierno y la violencia en una sociedad futurista.
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>2</td>
+                <td>Ingles</td>
+			</tr>
+			<tr>
+				<td><img src="assets/librojpg.jpg"></td>
+				<td>El gran Gatsby</td>
+				<td>F. Scott Fitzgerald</td>
+                <td>La novela es una crítica social de la decadencia de la sociedad estadounidense durante la década de 1920 y sigue la historia de un hombre llamado Jay G
+				    <div class="long_description"> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </td>
+                <td>3</td>
+                <td>Español</td>
+            </tr>
+		</tbody>
+	</table>
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-author"></p>
+        <p id="modal-summary"></p>
+    </div>
+    </div>
+</body>
+<footer>
+    <script src='assets/index.js'></script>
+</footer>
+</html>

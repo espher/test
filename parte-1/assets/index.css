@@ -1,0 +1,239 @@
+/*general*/
+.hidden {
+    display: none;
+}
+.long_description {
+    display: none;
+}
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos de la tabla */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para la columna de relevancia */
+  td.relevancia {
+    text-align: center;
+  }
+  
+  /* Estilos para la columna de idioma */
+  td.idioma {
+    text-align: center;
+  }
+  
+  /* Estilos para la clase short_description */
+  td .short_description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 10em; /* ajusta este valor según sea necesario */
+  }
+  
+  /* Estilos para la modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .modal-header h2 {
+    margin-top: 0;
+  }
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .modal-footer button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Media queries para hacer la tabla responsive */
+@media only screen and (max-width: 600px) {
+    table {
+      font-size: 14px;
+    }
+    th,
+    td {
+      padding: 10px;
+    }
+}
+  
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    table {
+      font-size: 16px;
+    }
+}
+  
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    table {
+      font-size: 18px;
+    }
+}
+ 
+  
+/*tabla*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+  
+@media screen and (max-width: 767px) {
+    th, td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    th {
+        text-align: left;
+    }
+}
+/*botons*/  
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+button:active, button:focus {
+    outline: none;
+    box-shadow: none;
+}
+#search {
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+}
+  
+#search:focus {
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+    border-color: #719ECE;
+}
+  
+/*modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+.modal-content .long_description {
+    display: block;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
